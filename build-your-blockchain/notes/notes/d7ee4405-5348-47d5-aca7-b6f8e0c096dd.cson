@@ -1,0 +1,92 @@
+createdAt: "2018-11-15T13:05:39.212Z"
+updatedAt: "2018-11-15T13:51:28.410Z"
+type: "MARKDOWN_NOTE"
+folder: "80cb3ea25e6e03446f22"
+title: "Byzantine Fault Torlerance"
+content: '''
+  # Byzantine Fault Torlerance
+  
+  ![b214584f.png](:storage/d7ee4405-5348-47d5-aca7-b6f8e0c096dd/b214584f.png)
+  
+  - There was a castle that Byzantine emperor  wanted to attack.
+  - There are four generals who wanted to attack
+  - Only win when all four comes to consensus
+  - If they have chaos they will be destroyed by the enemy
+  - They don't know who the traitor is
+  - Come up with a consensus protocol (algorithm) despite there's a traitor
+  
+  ![6bd47f52.png](:storage/d7ee4405-5348-47d5-aca7-b6f8e0c096dd/6bd47f52.png)
+  
+  - They can communiate each other.
+  - You don't know who to trust
+  
+  ![c568babb.png](:storage/d7ee4405-5348-47d5-aca7-b6f8e0c096dd/c568babb.png)
+  
+  - Main general issues an order "attack"
+  - Now it's between the rest of them, whether to decide if he's the right / wrong (traitor)
+  - We're gonna relay what the general says to everybody else, and then take the majority of the votes.
+  
+  ![41582e01.png](:storage/d7ee4405-5348-47d5-aca7-b6f8e0c096dd/41582e01.png)
+  
+  - The traitor says to the two other guys "the general says we should retreat, not attack"
+  
+  ![e6b21648.png](:storage/d7ee4405-5348-47d5-aca7-b6f8e0c096dd/e6b21648.png)
+  
+  - The other two (at the bottom) say each other that "general told me to attack!"
+  - Now, can they come to a consensus?
+  
+  ![876a0f53.png](:storage/d7ee4405-5348-47d5-aca7-b6f8e0c096dd/876a0f53.png)
+  
+  - Main general is attacking.
+  - The left bottom attacks because 2 vs 1 votes
+  - The right bottom attacks because 2 vs 1 votes
+  - The traitor we don't care, because he's a traitor.
+  - based on that algorithm, they came to a consenus
+  
+  ## Now, the commander is a traitor. What would happen?
+  
+  ![fad2aad1.png](:storage/d7ee4405-5348-47d5-aca7-b6f8e0c096dd/fad2aad1.png)
+  
+  - If the traitor tell them to attack, then everyone attacks so they win
+  - If the traitor tell them to retreat, then everyone retreats so they win
+  
+  ## Now, the commmander (traitor) tells two to attack, one to retreat. Does the algorithm still work?
+  
+  ![d76c00a9.png](:storage/d7ee4405-5348-47d5-aca7-b6f8e0c096dd/d76c00a9.png)
+  
+  - It does. By relaying the messages, they can come to a consenus
+  
+  This algorithm
+  **Byzantine Fault Tolerance**
+  - Taking the majority of the conveyed info and acting upon that.
+  
+  ## To what level is it tolerant?
+  
+  If there are two traitors, there's no solution
+  For this algorithm to work, you have to have more than 1/3 cannot be traitors. (pBFT)
+  
+  [What is Practical Byzantine Fault Tolerance? Complete Beginner's Guide](https://blockonomi.com/practical-byzantine-fault-tolerance/)
+  
+  ## BFT is a huge concept
+  - All different gauges coming from... what if one of them fails? YOu can't have the whole apirplains to crash because one heat doesn't work very well. Heat sensor in the engine. Air plane has to operate.
+  - Nuclear power
+  - Rockets - shuttles, JAM the circuits... 
+  - The system that consists of lots of lots of components...
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

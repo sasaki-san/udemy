@@ -1,0 +1,39 @@
+createdAt: "2018-11-18T10:51:46.030Z"
+updatedAt: "2018-11-18T11:05:01.944Z"
+type: "MARKDOWN_NOTE"
+folder: "2bd68818075c7f4b81f8"
+title: "Bitcoin's Monetary Policy"
+content: '''
+  # Bitcoin's Monetary Policy
+  
+  ![6e3eaf36.png](:storage/1a0726ed-5204-40ef-b1b4-c8499e99a3fa/6e3eaf36.png)
+  - Two main parts in Monetary Policy
+  
+  ## Halving 
+  - The number of bitcoins released into the system is halved every single four years
+  
+  
+  ![a4408927.png](:storage/1a0726ed-5204-40ef-b1b4-c8499e99a3fa/a4408927.png)
+  
+  - Entirely managed by software
+  
+  ![6ae9f16c.png](:storage/1a0726ed-5204-40ef-b1b4-c8499e99a3fa/6ae9f16c.png)
+  
+  ![26fcbc58.png](:storage/1a0726ed-5204-40ef-b1b4-c8499e99a3fa/26fcbc58.png)
+  
+  - Fees will increase because more people adopt Bitcoin 
+  - more and more people will be using bitcoin and
+  - more transactions will be required to be processed
+  - more minors will be getting more fees
+  - people will be paying more higher fees for their trx to go through
+  
+  ## Block Frequency
+  - How often do those get the rewards
+  
+  ![a67d31bd.png](:storage/1a0726ed-5204-40ef-b1b4-c8499e99a3fa/a67d31bd.png)
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

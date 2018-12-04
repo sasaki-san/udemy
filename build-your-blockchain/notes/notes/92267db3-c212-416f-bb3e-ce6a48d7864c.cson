@@ -1,0 +1,28 @@
+createdAt: "2018-11-14T14:11:08.073Z"
+updatedAt: "2018-11-14T14:34:26.435Z"
+type: "MARKDOWN_NOTE"
+folder: "80cb3ea25e6e03446f22"
+title: "Immutable Ledger"
+content: '''
+  # Immutable Ledger
+  
+  ![ef9a2e37.png](:storage/92267db3-c212-416f-bb3e-ce6a48d7864c/ef9a2e37.png)
+  
+  Unlike the book where you can change one book,
+  in blockchain, it is very difficult to change the block because the rest because invalid.
+  
+  ## Example:
+  BoA tried to foreclose the houses that they don't have the rights to during the financial downturn
+  
+  Haiti
+  Practically impossible to know which properties belog to whom because of the natural disasters - ledgers got destroyed
+  
+  Title deeds management
+  
+  [The Blockchain Economy: A beginner’s guide to institutional cryptoeconomics](https://medium.com/cryptoeconomics-australia/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics-64bf2f2beec4)
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,38 @@
+createdAt: "2018-11-18T11:08:52.977Z"
+updatedAt: "2018-12-03T15:35:29.758Z"
+type: "MARKDOWN_NOTE"
+folder: "2bd68818075c7f4b81f8"
+title: "Understanding Mining Difficulty"
+content: '''
+  # Understanding Mining Difficulty
+  
+  Probability that a randomly picked hash is valid is very low
+  
+  ![d611b4bb.png](:storage/1410d1db-855a-4935-b5ad-916a6f36e9ea/d611b4bb.png)
+  
+  Total possible 64-digit hex num = 10^77
+  Total valid hashes = 2 x 10^55
+  
+  Probability: 2 x 10^55 / 10^77 = small!
+  
+  less chance to win the lottery
+  
+  - If you decrease 18 to 1, then the total valid hashes increase, therefore the probability increase
+  - That's how you adjust the difficulty.
+  
+  ## How is mining difficulty calculated?
+  
+  Adjusted every 2 weeks (2016 blocks)
+  
+  Difficulty = current tareget / max target
+  - **How much harder it is now to mine bitconi compared to what it was**
+  
+  ![3ee419e2.png](:storage/1410d1db-855a-4935-b5ad-916a6f36e9ea/3ee419e2.png)
+  
+  - As of December 7, block 498048, the Bitcoin difficulty stands at 1,590,896,927,258. Each hash is effectively a random number between 1 and 2^256–1. The difficulty describes the target that the hash must undershoot. **This is similar to throwing darts randomly at a large target. The difficulty describes the size of the bullseye. The smaller the bullseye, the more often you have to throw a dart to randomly hit the bullseye.**
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

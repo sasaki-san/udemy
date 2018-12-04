@@ -1,0 +1,33 @@
+createdAt: "2018-10-18T06:36:31.309Z"
+updatedAt: "2018-11-14T13:44:07.491Z"
+type: "MARKDOWN_NOTE"
+folder: "80cb3ea25e6e03446f22"
+title: "Blockchain"
+content: '''
+  # Blockchain
+  
+  What is a blockchain?
+  
+  ![033bb1a5.png](:storage/550c1003-8334-464a-932d-a1d487a4d367/033bb1a5.png)
+  
+  Hash is like a Fingure print 
+  
+  ![086bf306.png](:storage/550c1003-8334-464a-932d-a1d487a4d367/086bf306.png)
+  
+  
+  Starts with Genesis Block, creating links to other blocks
+  
+  ![178c5d15.png](:storage/550c1003-8334-464a-932d-a1d487a4d367/178c5d15.png)
+  
+  Pior Work:
+  
+  [Time-stamping documents](https://www.anf.es/pdf/Haber_Stornetta.pdf)
+  
+  Crypto Currency Understanding Map:
+  ![7f0e23dc.png](:storage/550c1003-8334-464a-932d-a1d487a4d367/7f0e23dc.png)
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,89 @@
+createdAt: "2018-11-15T12:11:21.159Z"
+updatedAt: "2018-11-16T15:15:47.888Z"
+type: "MARKDOWN_NOTE"
+folder: "80cb3ea25e6e03446f22"
+title: "Mining"
+content: '''
+  # Mining
+  
+  Mining is all about finding a Nonce value which will generate a Hash value below a certain target threshold set by the Bitcoin network.
+  
+  ## Block
+  
+  ![181ee8cf.png](:storage/d5e43164-a666-4862-9ea4-23cc79bf20df/181ee8cf.png)
+  - Block stores multiple trx
+  - Prev hash: cryptographic link
+  - Current hash: new hash
+  
+  Is it that simple? 
+  Why do we need computation to mining blocks?
+  
+  ## Nonce
+  ![69ddd73b.png](:storage/d5e43164-a666-4862-9ea4-23cc79bf20df/69ddd73b.png)
+  - Everybody is just changing this all the time
+  - The number used at once
+  - Nonce gives an extra parameter to produce the hash
+  - We're free to change the nonce to vary the hash
+  
+  ![eebc9d78.png](:storage/d5e43164-a666-4862-9ea4-23cc79bf20df/eebc9d78.png)
+  
+  ![fad2ecdb.png](:storage/d5e43164-a666-4862-9ea4-23cc79bf20df/fad2ecdb.png)
+  
+  - You can see the hash is changing dramatically (the avalenche effect)
+  
+  ## How Mining Works
+  
+  A hash is a number (hexadecimal number)
+  
+  ![7d046b79.png](:storage/d5e43164-a666-4862-9ea4-23cc79bf20df/7d046b79.png)
+  
+  All Possible Hashes
+  
+  ![1c64b25c.png](:storage/d5e43164-a666-4862-9ea4-23cc79bf20df/1c64b25c.png)
+  
+  - There's a target set for minors to accomplish the certain hash
+  
+  ![4b1efa44.png](:storage/d5e43164-a666-4862-9ea4-23cc79bf20df/4b1efa44.png)
+  
+  - Just put the hardle for minors to challange 
+  
+  ![e865418c.png](:storage/d5e43164-a666-4862-9ea4-23cc79bf20df/e865418c.png)
+  
+  - If minor found the hash at the bottom, he's welcomed to create a block.
+  
+  - Express the target with leading zeroes.
+  - E.g. '0000'
+  
+  ![d4725f2f.png](:storage/d5e43164-a666-4862-9ea4-23cc79bf20df/434adce6.png)
+  
+  - When nonce is 23, the hash is above the target...we're not allowed to add it to the block...minors just sit there and change the nonce in order to guess the nonce that generates the hash that's below the target
+  - Nonce 5012 is the golden nonce
+  
+  - Important point is "Avalanche effect". Each time changing the nonce a little bit, it completely changes the produced hash. Nonce is not predictable!!
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

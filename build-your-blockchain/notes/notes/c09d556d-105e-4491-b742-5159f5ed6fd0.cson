@@ -1,0 +1,55 @@
+createdAt: "2018-11-14T13:44:15.176Z"
+updatedAt: "2018-11-15T12:11:45.471Z"
+type: "MARKDOWN_NOTE"
+folder: "80cb3ea25e6e03446f22"
+title: "Hash Cryptography"
+content: '''
+  # Hash Cryptography
+  
+  ## Finger Print
+  Identifies a person
+  -> equivalent => SHA256-hash 
+  
+  ![733d6bf4.png](:storage/c09d556d-105e-4491-b742-5159f5ed6fd0/733d6bf4.png)
+  
+  when use?
+  - Store Password
+  - Digital signature
+  
+  SHA => Secure Hash Algorithm
+  256 => the # of the bits it takes up in its memory
+  
+  The hash is always 64 characters long
+  It conists of Hexadecimals [0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F] 
+  
+  Each character in the hash takes 4 bits (2^4=16)
+  
+  With 256 bits, you can have 64 characters (256/4 bits = 16 characters)
+  
+  ## 5 req for hash algorithms
+  
+  1. One way
+  ![a537171a.png](:storage/c09d556d-105e-4491-b742-5159f5ed6fd0/a537171a.png)
+  
+  2. Deterministic
+  When applied twice, produce the same results
+  
+  3. Fast computation
+  
+  4. The Avalanche effect (very important)
+  Even a tiny change in the source document makes the hash entirely different
+  ![2a5ff887.png](:storage/c09d556d-105e-4491-b742-5159f5ed6fd0/2a5ff887.png)
+  
+  5. Must withstand collisions
+    Pigeonhole principle
+    ![1e869128.png](:storage/c09d556d-105e-4491-b742-5159f5ed6fd0/1e869128.png)
+    Naturally there will be a collision.
+    It's so rare that it happens so we can deal with it.
+    [鳩の巣原理 - Wikipedia](https://ja.wikipedia.org/wiki/%E9%B3%A9%E3%81%AE%E5%B7%A3%E5%8E%9F%E7%90%86)
+    The algorithm needs to withstand artificial collisions
+    ![58d2ea6c.png](:storage/c09d556d-105e-4491-b742-5159f5ed6fd0/58d2ea6c.png)
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

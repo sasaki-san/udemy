@@ -1,0 +1,30 @@
+createdAt: "2018-11-18T12:08:33.292Z"
+updatedAt: "2018-12-03T15:24:24.223Z"
+type: "MARKDOWN_NOTE"
+folder: "2bd68818075c7f4b81f8"
+title: "Mining Pools"
+content: '''
+  # Mining Pools
+  
+  - It distributes the cryptographic puzzle among miners
+  
+  ![b9e205f6.png](:storage/89ef21eb-c983-4fde-b1e9-376cfbbb0a90/b9e205f6.png)
+  
+  - then split the rewards proportionately
+  
+  ![5b219867.png](:storage/89ef21eb-c983-4fde-b1e9-376cfbbb0a90/5b219867.png)
+  
+  - What minerrs do is to purchase one of these, and go to a website and download the software and then taht's it.
+  
+  - By installing the software you're pointing this mining rig (hash power) to the mining pool
+  
+  - GPU mining works only for ethereum and z-cash
+  - Bitcoins require ASICS (outdated)
+  
+  
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

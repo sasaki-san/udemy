@@ -1,0 +1,47 @@
+createdAt: "2018-11-15T11:47:51.519Z"
+updatedAt: "2018-11-16T15:14:50.609Z"
+type: "MARKDOWN_NOTE"
+folder: "80cb3ea25e6e03446f22"
+title: "Distributed P2P Network"
+content: '''
+  # Distributed P2P Network
+  
+  ## How does the Distributed P2P Network property of Blockchain enhance the security of this technology?
+  
+  Every participant of the network has a copy of the full blockchain and all participants are synced up. Therefore, an attacker modifies the blockchain on one fo the computers in the netwrok, 
+  - they are modifying only one single copy of the blockchain
+  - The network will see this, compare it to the prevailing majority of versions of the blockchain in the network and very quickly override the fraudulent version
+  
+  ![3249b38e.png](:storage/70b9187a-2d25-44c5-b4af-2581efa20e10/3249b38e.png)
+  
+  - What prevents malicious actors from changing a block (hash) and subsequent blocks?
+  
+  - What happens if there's system error? You cannot restore the data
+  
+  There are the problems that distributed P2P Network solves
+  
+  ## Blockchain is copied across the network
+  
+  ![82b0b4de.png](:storage/70b9187a-2d25-44c5-b4af-2581efa20e10/82b0b4de.png)
+  
+  - New block gets copied all over the network
+  
+  ![24816463.png](:storage/70b9187a-2d25-44c5-b4af-2581efa20e10/24816463.png)
+  
+  - When malicious actor successfully changes all blocks, in DP2P they're constantly sync'ed up (checking their peers) if their blocks are matching up. "Hey, look, your blockchain is wrong compared to us. You're minority" then the right values are copied over to restore the malicious user's blocks to original value.
+  
+  ![6c386aa4.png](:storage/70b9187a-2d25-44c5-b4af-2581efa20e10/6c386aa4.png)
+  
+  - Meaning, the hacker needs to attack all of the nodes. They have to attach more than 51% of the computers on the network in order to successfully replace the chain. If you have 10,000 computers.
+  - We don't need to trust each other, but the technology design brings trust to trsustless framework to allow us to transact each other.
+  - Blockchain has multiple levels of security
+    - Hash
+    - P2P distributed network
+  
+  
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

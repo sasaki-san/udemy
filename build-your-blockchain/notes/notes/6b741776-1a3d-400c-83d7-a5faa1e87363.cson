@@ -1,0 +1,32 @@
+createdAt: "2018-11-18T10:34:41.627Z"
+updatedAt: "2018-11-18T10:50:58.991Z"
+type: "MARKDOWN_NOTE"
+folder: "2bd68818075c7f4b81f8"
+title: "What is Bitcoin?"
+content: '''
+  # What is Bitcoin?
+  Bitcoin is a **protocol** that facilitates the blockchain and makes it come to life
+  
+  Layesrs
+  - Tech
+    - Blockchain
+  - Protocols/Coin
+    - Layer 2 is about creating the system wher people can transact each others
+    - Bitcoin (not only currency; a protocol at the same time)
+    - Ethereum
+    - Ripple
+    - Neo...
+  - Token
+    - Layer 3 is about building the applicaiton system like logistics 
+    - Binance coins
+    - EOS
+  
+  ## Ecosystem
+  
+  ![f411f46f.png](:storage/6b741776-1a3d-400c-83d7-a5faa1e87363/f411f46f.png)
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

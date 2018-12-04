@@ -1,0 +1,81 @@
+createdAt: "2018-11-16T13:43:34.664Z"
+updatedAt: "2018-11-16T14:57:40.700Z"
+type: "MARKDOWN_NOTE"
+folder: "80cb3ea25e6e03446f22"
+title: "Consensus Protocol"
+content: '''
+  # Consensus Protocol
+  
+  Byzantine General:
+  - For general to understand which commands to listen to, so they have to come up with the consensus protocol to solve that challenge
+  
+  Blockchain: 
+  - Consensus protocol for has to solve:
+  - 1 Challenge 1: Attackers try to put a malicious block at the end
+  ![3960a34a.png](:storage/e9887295-4dd2-4331-ad17-79b3522b4bb9/3960a34a.png)
+  - 2 Competing chains: distributed across the world, there's delay in nodes far away from each other - successfully mine a block at the same time - not malicious - they have done nothing wrong - but this becomes a problem - should we grow on the orange block or purple block - it has to pick up one or the other - you'll have two chains - split
+  ![4ed97646.png](:storage/e9887295-4dd2-4331-ad17-79b3522b4bb9/4ed97646.png)
+  
+  ## Multiple consensus protocol
+  
+  ![e371e933.png](:storage/e9887295-4dd2-4331-ad17-79b3522b4bb9/e371e933.png)
+  
+  ## Proof of Work
+  ![029bdbcc.png](:storage/e9887295-4dd2-4331-ad17-79b3522b4bb9/029bdbcc.png)
+  
+  - How do we know that a minor didn't include the malicious transaction to the new block?
+  
+  ![25688d0d.png](:storage/e9887295-4dd2-4331-ad17-79b3522b4bb9/25688d0d.png)
+  
+  - There's a rigorous check conducted by every single node.
+  - The minor gets penelized
+  
+  - Cryptographic puzzles
+    - Hard to solve
+    - Easy to verify
+  
+  ![e3bd90a8.png](:storage/e9887295-4dd2-4331-ad17-79b3522b4bb9/e3bd90a8.png)
+  
+  - Orange propagates faster,
+  - Purple propagates slower,
+  - Which chain is longer?
+    - The longest chain 
+    - whichever the chain who has the longest blocks will win the chain.
+  - The group who has the most hashing power can everntually generate longest chain.
+  - Orange has twice the high chance to solve the cryptographic puzzles. (4 vs 2 nodes)
+  
+  ![5394e4dc.png](:storage/e9887295-4dd2-4331-ad17-79b3522b4bb9/5394e4dc.png)
+  
+  - Now, the conflicts get resolved. Orange has a longer chain.
+  
+  ![245c308f.png](:storage/e9887295-4dd2-4331-ad17-79b3522b4bb9/245c308f.png)
+  
+  - Purple ndoes now adopt the orange blocks
+  - The reward is contained in the Orpahned block, so the reward won't be valid anymore. The transactions in the purple is not valid anymore.
+  
+  ## The chain with more than 51% of hashing power will win
+  
+  - Byzantine general problem: they cannot come to the consensus if 70% honest generals
+  - PoW: It's better you only need 50% of honest nodes in order to come to the consensus
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false
