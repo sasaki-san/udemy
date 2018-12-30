@@ -1,0 +1,70 @@
+syntax = "proto3";
+
+package exercise;
+
+option java_package = "com.proto.exercise";
+option java_multiple_files = true;
+
+message SumNumbers {
+    int32 first_num =  1;
+    int32 second_num = 2;
+}
+
+message SumRequest {
+    SumNumbers numbers = 1;
+}
+
+message SumResponse {
+    int32 result = 1;
+}
+
+message DecomposePrimeRequest {
+    int32 num = 1;
+}
+
+message DecomposePrimeResponse {
+    int32 factor = 1;
+}
+
+message AverageRequest {
+    float num = 1;
+}
+
+message AverageResponse {
+    float result = 1;
+}
+
+message FindMaxRequest {
+    int32 num = 1;
+}
+
+message FindMaxResponse{
+    int32 result = 1;
+}
+
+message SquareRootRequest {
+    int32 number = 1;
+}
+
+message SquareRootResponse {
+    double number_root = 1;
+}
+
+service CalcuatorService {
+    rpc Sum (SumRequest) returns (SumResponse) {
+    }
+
+    rpc DecomposePrime (DecomposePrimeRequest) returns (stream DecomposePrimeResponse) {
+    }
+
+    rpc Average (stream AverageRequest) returns (AverageResponse) {
+    }
+
+    rpc FindMax (stream FindMaxRequest) returns (stream FindMaxResponse) {
+    }
+
+    // error handling
+    // This RPC will throw an exception if negative value is passed
+    rpc SquareRoot (SquareRootRequest) returns (SquareRootResponse) {
+    }
+}
