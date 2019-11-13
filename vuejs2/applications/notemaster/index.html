@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notemaster</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://davidtkatz.com/public_css/noteMaster.css">
+</head>
+
+<body>
+    <div id="app">
+        <h3>{{title}}</h3>
+        <div class="form">
+            <div class="form-group">
+                <div class="form-group">
+                    <label>Note Title</label>
+                    <input class="form-control" type="text" v-model="note.title">
+                </div>
+                <div class="form-group">
+                    <label>Note text</label>
+                    <textarea class="form-control" v-model="note.text"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Priority</label>
+                    <textarea class="form-control" v-model="note.priority" type="number"></textarea>
+                </div>
+                <button class="btn btn-primary" @click="addNote">Submit</button>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="col-sm-4 note" v-for="(note, index) in notes">
+                <div class="card">
+                    <button class="close" @click="removeNote(index)">&times;</button>
+                    <div class="card-block">
+                        <h4 class="card-title">{{note.title}}</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">{{note.date}}</h6>
+                        <p class="card-text">{{note.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                title: "Notemaster",
+                note: {
+                    title: "",
+                    text: "",
+                    color: 'red',
+                    priority: 1
+                },
+                notes: [
+                    {
+                        title: "Visited Hawaii",
+                        text: "I loved beaches",
+                        date: new Date(Date.now()).toLocaleString(),
+                        color: 'red',
+                        priority: 1
+                    }
+                ]
+            },
+            methods: {
+                sort() {
+                    this.notes.sort((a, b) => {
+                        if (a.priority > b.priority) {
+                            return 1
+                        }
+                        if (a.priority < b.priority) {
+                            return -1
+                        }
+                        return 0
+                    })
+                },
+                addNote() {
+                    let { text, title, priority } = this.note
+                    this.notes.push({ text, title, priority, date: new Date(Date.now()).toLocaleString() })
+                    this.sort()
+                },
+                removeNote(index) {
+                    this.notes.splice(index, 1)
+                    this.sort()
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
